@@ -1,0 +1,15 @@
+<a href="/celebrities">back to de list</a>
+<h2>CELEBRITY</h2>
+<a href="/celebrities/{{celebrity._id}}/edit">edit this celebrity</a>
+<h3>{{ celebrity.name }}</h3>
+<br>
+<p>
+  <ul>
+    {{#each celebrity.occupation }}
+    <li> {{ this }}</li>
+    {{/each}}
+  </ul>
+</p>
+<p>
+  {{ celebrity.catchPhrase }}
+</p>

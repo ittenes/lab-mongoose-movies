@@ -1,0 +1,15 @@
+<a href="/movies">back to de list</a>
+<h2>MOVIE</h2>
+<a href="/movies/{{movie._id}}/edit">edit this movie</a>
+<h3>{{ movie.title }}</h3>
+<br>
+<p>
+  <ul>
+    {{#each movie.genere }}
+    <li> {{ this }}</li>
+    {{/each}}
+  </ul>
+</p>
+<p>
+  {{ movie.plot }}
+</p>
